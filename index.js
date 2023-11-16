@@ -8,7 +8,8 @@ const app = express();
 require("dotenv").config();
 
 app.use(cors({
-    origin: process.env.CLIENT,
+    // origin: process.env.CLIENT,
+    origin: '*',
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     optionsSuccessStatus: 204,
   }));
